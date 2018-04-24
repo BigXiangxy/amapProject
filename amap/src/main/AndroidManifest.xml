@@ -35,7 +35,13 @@
     <application
         android:label="@string/app_name"
         android:supportsRtl="true">
-
+        <!--高德配置开始-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="${AMAP_APP_KEY}" />
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <!--高德配置结束-->
     </application>
 
 </manifest>

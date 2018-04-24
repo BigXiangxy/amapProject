@@ -16,6 +16,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildTypes.all {
+        manifestPlaceholders = [AMAP_APP_KEY: "aced1b0869b18f8451d2fb2e27e3fc54"]
+    }
 }
 
 dependencies {
