@@ -32,7 +32,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            //  proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
@@ -46,11 +46,6 @@ dependencies {
     //    compile 'com.amap.api:3dmap:6.0.0'
     //    compile 'com.amap.api:location:3.8.0'
     provided 'org.weex.plugin:processor:1.0.2'
-//    if (project.usingWeex == "0.18.0") {
-//        compile project(':weex_sdk')
-//    } else if (project.usingWeex == "0.16.0") {
-//        compile project(':weex_sdk_16')
-//    }
     compile 'com.github.BigXiangxy:QYQBase:1.5'
 }
 
