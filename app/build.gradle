@@ -9,6 +9,11 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
     }
     sourceSets {
         main {
@@ -34,5 +39,5 @@ dependencies {
     androidTestCompile 'com.android.support.test:runner:1.0.1'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile project(':amap')
-//    compile 'com.github.BigXiangxy:amapProject:1.3'
+//    compile 'com.github.BigXiangxy:amapProject:1.4'
 }
